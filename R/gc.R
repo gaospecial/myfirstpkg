@@ -11,7 +11,7 @@
 #' @examples
 #' seq = "ATGCATGACAGATC"
 #' gc(seq = seq)
-gc = function(seq){
+gc_content = function(seq){
   len1 = stringr::str_length(seq)
   seq = stringr::str_remove_all(seq, "[AT]")
   len2 = stringr::str_length(seq)
